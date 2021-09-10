@@ -1,0 +1,430 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-weight:700;
+    color: white;
+}
+p{
+    font-size: 1.5rem;
+    color:coral;
+    font-weight: 400;
+}
+h5{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color:rgb(165, 154, 154);
+    text-transform: capitalize;
+}
+
+
+.navbar{
+    font-size: 18px;
+    font-weight: 800;
+    box-shadow: 10px 12px 13px 15px solid grey;
+    top:0;
+    left:0;
+   /*background-color: rgba(39, 38, 38, 0.1);*/
+}
+
+/*Mobile nav*/
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color:black;
+}
+
+
+@media only screen and (max-width:991px){
+    body>nav>div>button:hover,
+    body>nav>div>button:focus{
+        background-color: coral;
+    }
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar{
+     color:white;
+    }
+    #navbarSupportedContent > ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent>ul>li:nth-child(n)>a{
+        padding: 10px;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding:0 20px;
+    color:#ffff;
+    transition: 0.3s ease;
+    position: relative;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link,
+.navbar i.active{
+    color:coral;
+   
+}
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0px 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+#home span{
+    color:crimson;
+    text-transform: capitalize;
+}
+#home button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    cursor:pointer;
+    color:crimson;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    background-color:white;
+    border-radius:10px;
+    transition:0.3s ease;
+    margin-left:10%;
+}
+#home button:hover{
+    background-color:crimson;
+    color:white;
+    font-family:  'Allison', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+#home {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)) ,url(../home_page/bg1.webp);
+    height: 120vh;
+    width:100%;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+
+}
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    transition:0.3s ease;
+}
+#new .one:hover .details{
+    cursor:pointer;
+    background-color: rgba(248,178,178,0.7);
+    transform: translateY(-10px);
+}
+#new .one .details button{
+    display:inline-flex;
+    font-size: 14px;
+    font-weight: 700;
+    color:#2a2a2a;
+    outline: none;
+    border:none;
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2a2a2a;
+    padding:2.5px;
+    transform:translateY(70px);
+    transition:0.3s ease-in;
+}
+#new .one .details button:hover{
+    color:#fff;
+    border-bottom:1px solid #fff;
+}
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    font-weight: 800;
+}
+
+/*products*/
+
+h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.product h5{
+    font-size: 10px;
+    font-weight: 600;
+}
+.star{
+    color:goldenrod;
+    padding: 10px;
+}
+.product img{
+    background-color: rgb(180, 176, 176);
+    height: 60%;
+    width:100%;
+    transition: 0.3s all;
+}
+
+.product{
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy1{
+    background-color: coral;
+    transform: translateY(20px);
+    opacity:0;
+    transition: 0.3s all;
+   font-size: 0.8rem;
+    font-weight: 800;
+    outline: none;
+    border: none;
+        cursor:pointer;
+        padding: 10px 20px;
+        text-transform: uppercase;
+       cursor: pointer;
+        border-radius:10px;
+        transition:0.3s ease;
+  
+}
+.product:hover .buy1{
+   
+    transform: translateY(0);
+    opacity:1;
+    cursor: pointer;
+  
+}
+#banner h1{
+    color:white;
+    margin-left: 10%;
+}
+#banner{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.2)) ,url(../home_page/joao-vitor-duarte-_I2Ny2n3NDg-unsplash.jpg);
+    height: 60vh;
+    width:100%;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+    top:0;
+    
+
+}
+#banner h4{
+    color:white;
+    margin-left: 10%;
+}
+#banner button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    cursor:pointer;
+    color:black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color:white;
+    border-radius:10px;
+    transition:0.3s ease;
+    margin-left: 14%;;
+}
+#banner button:hover{
+    background-color:coral;
+    color:white;
+    font-family:  'Allison', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+footer p{
+    font-size: 16px;
+    color:rgb(26, 25, 24);
+}
+footer ul li {
+    list-style: none;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 5px;
+}
+footer h5{
+    font-size: 25px;
+    color:white;
+    font-weight: 700;
+}
+footer  span{
+    font-size: 18px;
+    padding-right: 10px;
+    color:rgb(10, 151, 151);
+}
+
+.copyright .row{
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.copyright .row i{
+    font-size: 25px;
+    padding: 10px 20px;
+    border: 1px solid rgb(10, 107, 107);
+    color:rgb(10, 107, 107);
+    border-radius: 10px;
+    justify-content: space-evenly;
+    
+}
+.copyright .row p{
+    font-weight: 700;
+    color:white;
+}
+.copyright .row i:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    color:white;
+    background-color:rgb(10, 107, 107) ;
+}
+footer{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    color:white;
+}
+footer p{
+    color:white;
+}
+#style{
+    text-decoration: underline coral;
+    font-size: 30px;
+    font-weight: 300;
+    color:black;
+    text-transform: capitalize;
+}
+.pagination a{
+    color:black;
+    font-weight: 400;
+}
+.pagination nav ul li:nth-child(n):hover a{
+    background-color: brown;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-around;
+}
+.small-img-col{
+    flex-basis: 25%;
+}
+#spro button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    cursor:pointer;
+    color:black;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color:coral;
+    border-radius:10px;
+    transition:0.3s ease;
+    margin-left: 8%;;
+    margin-top: 10px;
+
+}
+#spro button:hover{
+    background-color:coral;
+    color:white;
+    font-family:  'Allison', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+#spro p{
+    font-size: 15px;
+    font-weight: 500;
+color:black;
+}
+#spro select{
+    display:block;
+    padding:5px 10px;
+}
+#spro input{
+    width:50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+#spro input:focus{
+    outline: none;
+}
+#spro img{
+    background: grey;
+}
+.change-content::after{
+    content: '';
+    animation: changetext 10s linear infinite;
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+}
+@keyframes changetext{
+    0%{content:"Shoes"}
+    10%{content:"jackets"}
+    25%{content:"watches"}
+    40%{content:"cosmetics"}
+    60%{content:"clothes"}
+    80%{content:"Ethnic"}
+    100%{content:"lehangas"}
+}
+/*.navbar-nav .nav-item .nav-link{
+    color:white;
+}*/
+
+#nav-name{
+    color:crimson;
+}
+#style2{
+    font-size: 30px;
+    font-weight: 800;
+    color:crimson;
+}
